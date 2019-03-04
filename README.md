@@ -19,7 +19,7 @@ In addition, with the help of de novo transcriptome assembly strategy, we can re
 
 ```sbatch ./ReferenceAnalysis.sbatch <experimental group1 (SRR id) > <experimental group2 (SRR id)> <experimental group3 (SRR id)> <control group4 (SRR id)> <control group5 (SRR id)> <control group6 (SRR id)> <reference genome (filename)>```
 
-Command Line Example:
+#### Command Line Example:
 ```sbatch ./AssemblyAnalysis.sbatch SRR6374506 SRR6374507 SRR6374508 SRR6374511 SRR6374513 SRR6374514 GCF_000715135.1_Ntab-TN90_genomic.fna```
 
 ```sbatch ./ReferenceAnalysis.sbatch SRR6374506 SRR6374507 SRR6374508 SRR6374511 SRR6374513 SRR6374514 GCF_000715135.1_Ntab-TN90_genomic.fna```
