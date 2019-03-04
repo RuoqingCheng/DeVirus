@@ -74,12 +74,12 @@ BWA MEM will generate .bam files and .sam files. In pipeline 1 with AssemblyAnal
 We use countxpression.py after mapping [1]. This python script is to collect all the statistics we need from the generated .sam files and generate several * counts.txt. Later command lines are used to adjust these * counts.txt files into allcountsdata.txt which recording the expression of each contig in different samples . 
 
 allcountsdata.txt: (samples name are presented in the first row after ContigName)
-![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/allcountsdata.png)
+<div align=center>![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/allcountsdata.png)</div>
 
 #### Differential Expression Analysis (DeseqTreat.py, Deseq2.r, pick.py)
 1. DeseqTreat.py
 This python script is to get gene expression information from infected groups and controls by finding the corresponding gene of each contig according to the blast result.  The generated txt file is as following:
-![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/NW.png)
+<div align=center>![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/NW.png)</div>
 
 2. Deseq2.r
 Deseq2.r will give us p-value of each contigs according to contigs’ appearance in infected samples and controls respectively and a result plotting.
@@ -93,20 +93,20 @@ This python script will generate result_Deseq2.txt by retrieving significantly d
 All the results are names with the format of result_* :
 
 1. result_smallvalue.out: stored the pairs from Trinity contigs to genes with e-values lower than 1e-10.
-![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/result_smallvalue.jpeg)
+<div align=center>![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/result_smallvalue.jpeg)</div>
 
 2. result_virus.fasta: stored the virus we found, coming from the Trinity contigs with e-value large than 1e-10.
-![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/generatedtxt.jpeg)
+<div align=center>![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/generatedtxt.jpeg)</div>
 
 3. result_graph.pdf: stored a scatter graph about reads count v.s. log2 fold change. The red points are the genes believed to be DEGs.
 
-<div align=center><img src="https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq1.jpeg" width="50%" height="50%" />
+<div align=center><img src="https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq1.jpeg" width="50%" height="50%" /></div>
 
-Figure 3. Assembly first strategy result
+Figure. Assembly first strategy result
 
-<div align=center><img src="https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq2.jpeg" width="50%" height="50%" />
+<div align=center><img src="https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq2.jpeg" width="50%" height="50%" /></div>
 
-Figure 4. Reference first strategy result
+Figure. Reference first strategy result
 
-<div align=right>#### Citation:
+#### Citation:
 1.De Wit P, Pespeni MH, Ladner JT, Barshis DJ, Seneca F, Jaris H, Overgaard Therkildsen N, Morikawa M and Palumbi SR (2012) The simple fool's guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis.  Molecular Ecology Resources 12, 1058-1067.
