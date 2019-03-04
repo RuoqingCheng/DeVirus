@@ -2,7 +2,7 @@
 
 ## Table of Contents
 ### Introduction
-##### * Background 
+#####* Background 
 ##### * Workflow
 ### Packages
 ##### * Trinity
