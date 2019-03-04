@@ -87,6 +87,20 @@ Deseq2.r will give us p-value of each contigs according to contigs’ appearance
 3. pick.py
 This python script will generate result_Deseq2.txt by retrieving significantly differential expression sequence and related statistics by selecting the Deseq2 result with p-value higher than 0.5.
 
+## Result
+#### Sample output:
+
+All the results are names with the format of result_* :
+
+1. result_smallvalue.out: stored the pairs from Trinity contigs to genes with e-values lower than 1e-10.
+![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/result_smallvalue.jpeg)
+
+2. result_virus.fasta: stored the virus we found, coming from the Trinity contigs with e-value large than 1e-10.
+![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/generatedtxt.jpeg)
+
+3. result_graph.pdf: stored a scatter graph about reads count v.s. log2 fold change. The red points are the genes believed to be DEGs.
+![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq1.jpeg)![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq2.jpeg)
+
 
 
 #### Citation:
