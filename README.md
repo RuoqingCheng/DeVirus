@@ -107,6 +107,6 @@ Figure 3. Assembly first strategy result
 <div align=center><img src="https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq2.jpeg" width="50%" height="50%" />
 
 Figure 4. Reference first strategy result
-
+</>
 #### Citation:
 1.De Wit P, Pespeni MH, Ladner JT, Barshis DJ, Seneca F, Jaris H, Overgaard Therkildsen N, Morikawa M and Palumbi SR (2012) The simple fool's guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis.  Molecular Ecology Resources 12, 1058-1067.
