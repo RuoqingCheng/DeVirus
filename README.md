@@ -76,6 +76,18 @@ We use countxpression.py after mapping [1]. This python script is to collect all
 allcountsdata.txt: (samples name are presented in the first row after ContigName)
 ![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/allcountsdata.png)
 
+#### Differential Expression Analysis (DeseqTreat.py, Deseq2.r, pick.py)
+1. DeseqTreat.py
+This python script is to get gene expression information from infected groups and controls by finding the corresponding gene of each contig according to the blast result.  The generated txt file is as following:
+![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/NW.png)
+
+2. Deseq2.r
+Deseq2.r will give us p-value of each contigs according to contigs’ appearance in infected samples and controls respectively and a result plotting.
+
+3. pick.py
+This python script will generate result_Deseq2.txt by retrieving significantly differential expression sequence and related statistics by selecting the Deseq2 result with p-value higher than 0.5.
+
+
 
 #### Citation:
 1.De Wit P, Pespeni MH, Ladner JT, Barshis DJ, Seneca F, Jaris H, Overgaard Therkildsen N, Morikawa M and Palumbi SR (2012) The simple fool's guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis.  Molecular Ecology Resources 12, 1058-1067.
