@@ -73,6 +73,9 @@ The assembled transcriptome will be aligned against a small database created wit
 BWA MEM will generate .bam files and .sam files. In pipeline 1 with AssemblyAnalysis.bash, we are mapping RNA-seq reads to the generated transcriptome assembly. While in pipeline 2 running ReferenceAnalysis.bash, RNA-seq reads are mapped to reference genome. 
 We use countxpression.py after mapping [1]. This python script is to collect all the statistics we need from the generated .sam files and generate several * counts.txt. Later command lines are used to adjust these * counts.txt files into allcountsdata.txt which recording the expression of each contig in different samples . 
 
+allcountsdata.txt: (samples name are presented in the first row after ContigName)
+![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/allcountsdata.png)
+
 
 #### Citation:
 1.De Wit P, Pespeni MH, Ladner JT, Barshis DJ, Seneca F, Jaris H, Overgaard Therkildsen N, Morikawa M and Palumbi SR (2012) The simple fool's guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis.  Molecular Ecology Resources 12, 1058-1067.
