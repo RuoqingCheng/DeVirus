@@ -105,8 +105,9 @@ All the results are names with the format of result_* :
 $ $
 Figure 3. Assembly first strategy result
 </center>
+
 <center>
-<img src="https://img-blog.csdn.net/20151129213701642" width="50%" height="50%" />
+<img src="https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq2.jpeg" width="50%" height="50%" />
 $ $
 Figure 4. Reference first strategy result
 </center>
