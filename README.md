@@ -23,3 +23,9 @@ In addition, with the help of de novo transcriptome assembly strategy, we can re
 ```sbatch ./AssemblyAnalysis.sbatch SRR6374506 SRR6374507 SRR6374508 SRR6374511 SRR6374513 SRR6374514 GCF_000715135.1_Ntab-TN90_genomic.fna```
 
 ```sbatch ./ReferenceAnalysis.sbatch SRR6374506 SRR6374507 SRR6374508 SRR6374511 SRR6374513 SRR6374514 GCF_000715135.1_Ntab-TN90_genomic.fna```
+
+#### Required Input Files:
+
+3 raw RNA reads fastq files from 3 experimental groups and 3 raw RNA reads fastq files from 3 control groups: To build de novo transcriptome for differential expression analysis.
+
+Reference genome fasta/fna file: To create a database for gene annotation. Can be downloaded from NCBI: https://www.ncbi.nlm.nih.gov/
