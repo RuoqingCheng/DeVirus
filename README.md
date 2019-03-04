@@ -1,20 +1,5 @@
 # DeVirus
 
-## Table of Contents
-### Introduction
-##### * Background 
-##### * Workflow
-### Packages
-##### * Trinity
-##### * BWA MEM
-##### * BLAST
-##### * DESeq2
-### Running Pipeline
-##### * Usage
-##### * Required Files
-### Getting Started with the Pipeline
-### Pitfalls and Limitation
-
 ## Introduction
 #### Background
 Many of plants diseases, which cause huge loss to agriculture, are caused by virus infection. System-level transcriptomic studies could help us to learn the differential expression gene (DEG)  in the response to the viral infection. Though the point of view from DEG, we could get a better understanding of how the virus affect the host plant and how the plant hosts response to viral infection. It could help us develop better strategies to control the diseases.  
@@ -72,6 +57,22 @@ Link: https://bioconductor.org/packages/release/bioc/html/DESeq2.html
 1. 3 raw RNA reads fastq files from 3 experimental groups and 3 raw RNA reads fastq files from 3 control groups: To build de novo transcriptome for differential expression analysis.
 
 2. Reference genome fasta/fna file: To create a database for gene annotation. Can be downloaded from NCBI: https://www.ncbi.nlm.nih.gov/
+
+
+
+## Getting Started with the Pipeline
+The difference between pipeline 1 in AssemblyAnalysis.bash and pipeline2 ReferenceAnalysis.bash is that there is no assembly part and annotation part in pipeline 1 and pipeline 2. 
+
+#### Assembly(Trinity)
+Trinity will generate Trinity.fasta (.fasta file) in ./trinity_test_out from 6 input fastq files. In this assembly part, Trinity will automatically check the quality of raw RNA-seq reads, generate trimmed reads and assemble transcriptome from these clean data.
+
+#### Annotation and Picking up the Possible Virus Sequences (BLAST)
+The assembled transcriptome will be aligned against a small database created with BLASTNusing the input reference genome (.fasta file). We only annotate those input sequences with e-value lower than 1e-10. Also in this step we will generate a fasta file named virus.fasta. For those hits with high e-value (>1e-10) in the blast result, we construe that they are resulted from possible virus sequences due to infection samples and save them into virus.fasta.
+
+#### Mapping and Getting Expression Information (BWA MEM, countxpression.py)
+BWA MEM will generate .bam files and .sam files. In pipeline 1 with AssemblyAnalysis.bash, we are mapping RNA-seq reads to the generated transcriptome assembly. While in pipeline 2 running ReferenceAnalysis.bash, RNA-seq reads are mapped to reference genome. 
+We use countxpression.py after mapping [1]. This python script is to collect all the statistics we need from the generated .sam files and generate several * counts.txt. Later command lines are used to adjust these * counts.txt files into allcountsdata.txt which recording the expression of each contig in different samples . 
+
 
 #### Citation:
 1.De Wit P, Pespeni MH, Ladner JT, Barshis DJ, Seneca F, Jaris H, Overgaard Therkildsen N, Morikawa M and Palumbi SR (2012) The simple fool's guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis.  Molecular Ecology Resources 12, 1058-1067.
