@@ -1,4 +1,20 @@
 # DeVirus
+
+## Table of Contents
+#### Introduction
+##### Background 
+##### Workflow
+#### Packages
+##### Trinity
+##### BWA MEM
+##### BLAST
+##### DESeq2
+#### Running Pipeline
+##### Usage
+##### Required Files
+#### Getting Started with the Pipeline
+#### Pitfalls and Limitation
+
 Many of plants diseases, which cause huge loss to agriculture, are caused by virus infection. System-level transcriptomic studies could help us to learn the differential expression gene (DEG)  in the response to the viral infection. Though the point of view from DEG, we could get a better understanding of how the virus affect the host plant and how the plant hosts response to viral infection. It could help us develop better strategies to control the diseases.  
 
 Nicotiana tabacum is also known as cultivated tobacco, which leaves could be processed into tobacco. It is one of the most common cash crop all across the world. Cucumber mosaic virus (CMV) is a vital plant pathogenic virus. It has a wide range of plant hosts. As a result, studying the genome expression change in N. tabacum after CMV infection is quite meaningful. 
@@ -30,5 +46,5 @@ In addition, with the help of de novo transcriptome assembly strategy, we can re
 
 2. Reference genome fasta/fna file: To create a database for gene annotation. Can be downloaded from NCBI: https://www.ncbi.nlm.nih.gov/
 
-#### Citation
+#### Citation:
 1.De Wit P, Pespeni MH, Ladner JT, Barshis DJ, Seneca F, Jaris H, Overgaard Therkildsen N, Morikawa M and Palumbi SR (2012) The simple fool's guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis.  Molecular Ecology Resources 12, 1058-1067.
