@@ -99,7 +99,7 @@ All the results are names with the format of result_* :
 ![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/generatedtxt.jpeg)
 
 3. result_graph.pdf: stored a scatter graph about reads count v.s. log2 fold change. The red points are the genes believed to be DEGs.
-![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq1.jpeg)![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq2.jpeg)
+![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq1.jpeg = 200x)![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq2.jpeg = 200x)
 
 
 
