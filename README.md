@@ -7,5 +7,6 @@ In our study, we will use de novo transcriptome assembly strategy to build the w
 
 In addition, with the help of de novo transcriptome assembly strategy, we can rebuild the viral mRNA to viral transcriptome and find the virus. Our pipeline is appropriate to find DEG and virus in any virus caused plant disease cases. 
 
+## Pipeline
 
 ![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/Pipeline.jpeg)
