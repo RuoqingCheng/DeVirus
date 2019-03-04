@@ -6,3 +6,6 @@ Nicotiana tabacum is also known as cultivated tobacco, which leaves could be pro
 In our study, we will use de novo transcriptome assembly strategy to build the whole transcriptome, and use it as a reference to do DEG analysis. CMV is a kind of (+) RNA virus, so there won’t an insertion in plant genome during the infection. As a consequence, we can adopt mapping first strategy (use the reference from database directly rather than assembled by our self) to do DEG and compare the performances of the two different strategy. After the DEG analysis, we could compare the difference in the genome of N. tabacum with and without infection. 
 
 In addition, with the help of de novo transcriptome assembly strategy, we can rebuild the viral mRNA to viral transcriptome and find the virus. Our pipeline is appropriate to find DEG and virus in any virus caused plant disease cases. 
+
+
+![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/Pipeline.jpeg)
