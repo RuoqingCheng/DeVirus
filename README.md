@@ -1,9 +1,9 @@
 # DeVirus
 
 ## Table of Contents
-#### Introduction
-##### Background 
-##### Workflow
+### Introduction
+##### *Background 
+##### *Workflow
 #### Packages
 ##### Trinity
 ##### BWA MEM
