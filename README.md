@@ -2,7 +2,7 @@
 
 ## Table of Contents
 ### Introduction
-#####* Background 
+##### * Background 
 ##### * Workflow
 ### Packages
 ##### * Trinity
@@ -16,6 +16,7 @@
 ### Pitfalls and Limitation
 
 ## Introduction
+#### Background
 Many of plants diseases, which cause huge loss to agriculture, are caused by virus infection. System-level transcriptomic studies could help us to learn the differential expression gene (DEG)  in the response to the viral infection. Though the point of view from DEG, we could get a better understanding of how the virus affect the host plant and how the plant hosts response to viral infection. It could help us develop better strategies to control the diseases.  
 
 Nicotiana tabacum is also known as cultivated tobacco, which leaves could be processed into tobacco. It is one of the most common cash crop all across the world. Cucumber mosaic virus (CMV) is a vital plant pathogenic virus. It has a wide range of plant hosts. As a result, studying the genome expression change in N. tabacum after CMV infection is quite meaningful. 
@@ -24,9 +25,34 @@ In our study, we will use de novo transcriptome assembly strategy to build the w
 
 In addition, with the help of de novo transcriptome assembly strategy, we can rebuild the viral mRNA to viral transcriptome and find the virus. Our pipeline is appropriate to find DEG and virus in any virus caused plant disease cases. 
 
-## Pipeline
+#### Workflow
 
 ![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/Pipeline.jpeg)
+
+## Packages
+#### Trinity
+Required Data: (trimmed) fastq file
+Output: the collection of contigs in fasta file
+Description: Trinity is a software using greedy algorithm and de Brujin graph to align trimmed RNA reads to several contigs. Each contigs is a part of or just the unigene. 
+Link: https://github.com/trinityrnaseq/trinityrnaseq/wiki
+
+#### BLAST
+Required Data: fasta file
+Output: a fasta file for reference
+Description: Comparing the contigs from Trinity to the novel gene database and give annotation to each contigs if the contigs belong to some known gene. After that, maybe we need our own coding work to build our own reference according to the Blast work.
+Link: https://blast.ncbi.nlm.nih.gov/Blast.cgi
+
+#### BWA MEM
+Required Data: fastq file for reads and fasta file for reference
+Output: sam file
+Description: BWA MEM aligns the reads to the reference and gives a sam file that contains each read whether they are aligned to the reference or not.
+Link: http://bio-bwa.sourceforge.net/
+
+#### DESeq2
+Required Data: bam files or sam files
+Output: p-value for each gene
+Link: https://bioconductor.org/packages/release/bioc/html/DESeq2.html
+
 
 
 ## Running Pipeline
