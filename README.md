@@ -100,8 +100,16 @@ All the results are names with the format of result_* :
 
 3. result_graph.pdf: stored a scatter graph about reads count v.s. log2 fold change. The red points are the genes believed to be DEGs.
 ![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq1.jpeg =200x)![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq2.jpeg =200x)
-
-
+<center>
+<img src="https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq1.jpeg" width="50%" height="50%" />
+$ $
+Figure 3. Assembly first strategy result
+</center>
+<center>
+<img src="https://img-blog.csdn.net/20151129213701642" width="50%" height="50%" />
+$ $
+Figure 4. Reference first strategy result
+</center>
 
 #### Citation:
 1.De Wit P, Pespeni MH, Ladner JT, Barshis DJ, Seneca F, Jaris H, Overgaard Therkildsen N, Morikawa M and Palumbi SR (2012) The simple fool's guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis.  Molecular Ecology Resources 12, 1058-1067.
