@@ -6,7 +6,7 @@ Many of plants diseases, which cause huge loss to agriculture, are caused by vir
 
 Nicotiana tabacum is also known as cultivated tobacco, which leaves could be processed into tobacco. It is one of the most common cash crop all across the world. Cucumber mosaic virus (CMV) is a vital plant pathogenic virus. It has a wide range of plant hosts. As a result, studying the genome expression change in N. tabacum after CMV infection is quite meaningful. 
 
-In our study, we will use de novo transcriptome assembly strategy to build the whole transcriptome, and use it as a reference to do DEG analysis. CMV is a kind of (+) RNA virus, so there won’t an insertion in plant genome during the infection. As a consequence, we can adopt mapping first strategy (use the reference from database directly rather than assembled by our self) to do DEG and compare the performances of the two different strategy. After the DEG analysis, we could compare the difference in the genome of N. tabacum with and without infection. 
+In our study, we use de novo transcriptome assembly strategy to build the whole transcriptome, and use it as a reference to do DEG analysis. CMV is a kind of (+) RNA virus, so there won’t be an insertion in plant genome during the infection. As a consequence, we can adopt mapping first strategy (use the reference from database directly rather than assembled by our self) to do DEG and compare the performances of the two different strategy. After the DEG analysis, we could compare the difference in the genome of N. tabacum with and without infection. 
 
 In addition, with the help of de novo transcriptome assembly strategy, we can rebuild the viral mRNA to viral transcriptome and find the virus. Our pipeline is appropriate to find DEG and virus in any virus caused plant disease cases. 
 
@@ -107,6 +107,13 @@ Figure. Assembly first strategy result</div>
 <div align=center><img src="https://github.com/RuoqingCheng/DataForCSE185/blob/master/deseq2.jpeg" width="50%" height="50%" />
 
 Figure. Reference first strategy result</div>
+
+#### Additional graph:
+![alt text](https://github.com/RuoqingCheng/DataForCSE185/blob/master/venn.jpeg)
+Figure. left: assembly pipeline, right: reference pipeline
+
+The sharing genes in the two results were only 328, which were only one of seven to nine of the whole result.
+
 
 #### Citation:
 1.De Wit P, Pespeni MH, Ladner JT, Barshis DJ, Seneca F, Jaris H, Overgaard Therkildsen N, Morikawa M and Palumbi SR (2012) The simple fool's guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis.  Molecular Ecology Resources 12, 1058-1067.
