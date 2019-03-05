@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -N 4  ###asking for 12 node
+#SBATCH -N 4  ###asking for 4 nodes
 #SBATCH -p RM
 #SBATCH --ntasks-per-node 28
 #SBATCH --mem=120GB
