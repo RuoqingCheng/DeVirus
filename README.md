@@ -108,7 +108,7 @@ Figure. Assembly first strategy result</div>
 
 Figure. Reference first strategy result</div>
 
-#### Additional graph:
+#### Additional Venn Diagram:
 <div align=center><img src="https://github.com/RuoqingCheng/DataForCSE185/blob/master/venn.jpeg" width="50%" height="50%" />
 
 Figure. left: assembly pipeline, right: reference pipeline</div>
