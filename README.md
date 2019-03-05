@@ -118,3 +118,6 @@ The sharing genes in the two results were only 328, which were only one of seven
 
 #### Citation:
 1.De Wit P, Pespeni MH, Ladner JT, Barshis DJ, Seneca F, Jaris H, Overgaard Therkildsen N, Morikawa M and Palumbi SR (2012) The simple fool's guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis.  Molecular Ecology Resources 12, 1058-1067.
+
+2.Data analysis practice: Run DEG with DESeq2, mucun9548890, https://www.imooc.com/article/268908
+
