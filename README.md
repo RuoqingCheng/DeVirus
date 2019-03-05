@@ -17,25 +17,36 @@ In addition, with the help of de novo transcriptome assembly strategy, we can re
 ## Packages
 #### Trinity
 Required Data: (trimmed) fastq file
+
 Output: the collection of contigs in fasta file
+
 Description: Trinity is a software using greedy algorithm and de Brujin graph to align trimmed RNA reads to several contigs. Each contigs is a part of or just the unigene. 
+
 Link: https://github.com/trinityrnaseq/trinityrnaseq/wiki
 
 #### BLAST
 Required Data: fasta file
+
 Output: a fasta file for reference
+
 Description: Comparing the contigs from Trinity to the novel gene database and give annotation to each contigs if the contigs belong to some known gene. After that, maybe we need our own coding work to build our own reference according to the Blast work.
+
 Link: https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
 #### BWA MEM
 Required Data: fastq file for reads and fasta file for reference
+
 Output: sam file
+
 Description: BWA MEM aligns the reads to the reference and gives a sam file that contains each read whether they are aligned to the reference or not.
+
 Link: http://bio-bwa.sourceforge.net/
 
 #### DESeq2
 Required Data: bam files or sam files
+
 Output: p-value for each gene
+
 Link: https://bioconductor.org/packages/release/bioc/html/DESeq2.html
 
 
