@@ -111,7 +111,7 @@ Figure. Reference first strategy result</div>
 #### Additional graph:
 <div align=center><img src="https://github.com/RuoqingCheng/DataForCSE185/blob/master/venn.jpeg" width="50%" height="50%" />
 
-Figure. left: assembly pipeline, right: reference pipeline
+Figure. left: assembly pipeline, right: reference pipeline</div>
 
 The sharing genes in the two results were only 328, which were only one of seven to nine of the whole result.
 
