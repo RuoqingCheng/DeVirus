@@ -135,7 +135,7 @@ To further improve the performance or the current pipeline, we also can create a
 
 ## Citation:
 
-1. Lu, Jie, et al. "Transcriptome analysis of Nicotiana tabacum infected by Cucumber mosaic virus during systemic symptom de
+1.Lu, Jie, et al. "Transcriptome analysis of Nicotiana tabacum infected by Cucumber mosaic virus during systemic symptom de
 velopment." PLoS one 7.8 (2012): e43447.
 
 2.De Wit P, Pespeni MH, Ladner JT, Barshis DJ, Seneca F, Jaris H, Overgaard Therkildsen N, Morikawa M and Palumbi SR (2012) The simple fool's guide to population genomics via RNA-Seq: an introduction to high-throughput sequencing data analysis.  Molecular Ecology Resources 12, 1058-1067.
