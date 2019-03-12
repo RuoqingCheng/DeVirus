@@ -43,7 +43,7 @@ Trinity --no_version_check --trimmomatic --seqType fq --max_memory 80G --CPU 26 
   --left ./forward.fastq \
   --right ./reverse.fastq
 
-#bwa
+#bwa for mapping
 
 bwa index ./trinity_out_test/Trinity.fasta
 bwa mem ./trinity_out_test/Trinity.fasta "$1"_1.adj.fastq "$1"_2.adj.fastq > cmv1.sam
@@ -104,7 +104,7 @@ cat trinity_test_small/Trinity.fasta | grep -A1 -f blast_test/virus.ids > blast_
 
 cp blast_test/virus.fasta result_virus.fasta
 
-#Deseq2
+#Deseq2 for differential expression analysis
 
 python DeseqTreat.py result_smallvalue.out allcountsdata.txt tmp.txt
 
