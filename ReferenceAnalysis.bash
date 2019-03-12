@@ -20,6 +20,7 @@ cat "$x"_1.fastq | perl -lane 's/_forward//; print;' > "$x"_1.adj.fastq;
 cat "$x"_2.fastq | perl -lane 's/_reverse//; print;' > "$x"_2.adj.fastq;
 done
 
+#Mapping
 bwa index ./"$7"
 bwa mem ./"$7" "$1"_1.adj.fastq "$1"_2.adj.fastq > cmv1_rnaseq.sam
 bwa mem ./"$7" "$2"_1.adj.fastq "$2"_2.adj.fastq > cmv2_rnaseq.sam
@@ -28,6 +29,7 @@ bwa mem ./"$7" "$4"_1.adj.fastq "$4"_2.adj.fastq > mock1_rnaseq.sam
 bwa mem ./"$7" "$5"_1.adj.fastq "$5"_2.adj.fastq > mock2_rnaseq.sam
 bwa mem ./"$7" "$6"_1.adj.fastq "$6"_2.adj.fastq > mock3_rnaseq.sam
 
+#Differential expression Analysis
 python countxpression_rnaseq.py 5 15 countstatssummary_rnaseq.txt cmv1_rnaseq.sam cmv2_rnaseq.sam cmv3_rnaseq.sam mock1_rnaseq.sam mock2_rnaseq.sam mock3_rnaseq.sam
 
 for filename in *cnts.txt; do
